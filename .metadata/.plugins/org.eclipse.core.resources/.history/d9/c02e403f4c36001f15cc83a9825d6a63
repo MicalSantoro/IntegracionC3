@@ -1,0 +1,23 @@
+package com.evaluacion2.evaluacion2CI;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class conexion {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost/ci";
+        String user = "root";
+        String password = "mical";
+
+        try {
+            Connection connection = DriverManager.getConnection(jdbc:mysql://localhost/ci, root, mical);
+            if (connection != null) {
+                System.out.println("Conexión exitosa a la base de datos");
+                connection.close();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}

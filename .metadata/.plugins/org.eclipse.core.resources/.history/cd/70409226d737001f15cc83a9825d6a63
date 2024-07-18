@@ -1,0 +1,43 @@
+package com.evaluacion2.evaluacion2CI;
+import java.util.Date;
+
+public class usuario {
+	
+	private int Rut;
+	private String Username;
+	private String Password;
+	
+	
+	public usuario() {}
+	
+	public usuario (int Rut, String Username, String Password) {
+		
+		this.Rut = Rut;
+		this.Username = Username;
+		this.Password = Password;
+		
+	}
+	
+	 public int getRut() {
+	        return Rut;
+	    } 
+	 public String getUsername() {
+	        return Username;
+	    } 
+	 public String getPassword() {
+	        return Password;
+	    }
+
+	 
+	 public void setRut(int Rut) {
+	        this.Rut = Rut;
+	    }
+	 
+	 public void setUsername(String Username) {
+	        this.Username = Username;
+	    }
+	 
+	 public void setPassword(String Password) {
+	        this.Password = Password;
+	    }
+}
